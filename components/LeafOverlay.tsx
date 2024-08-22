@@ -7,7 +7,7 @@ type Props = {};
 
 const LeafOverlay = (props: Props) => {
 	return (
-		<div className='fixed z-50 pointer-events-none'>
+		<div className='fixed z-40 pointer-events-none'>
 			<Image
 				src={leaf1}
 				alt='leaf overlay leaf'

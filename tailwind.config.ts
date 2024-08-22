@@ -12,9 +12,8 @@ const config: Config = {
 				"bg-primary": "#EFEEE5",
 			},
 			backgroundImage: {
-				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-				"gradient-conic":
-					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+				"short-vertical-gradient":
+					"linear-gradient(to bottom, white, #999)",
 				"noise-background": "url('/noise.png')",
 				"cork-background": "url('/cork.png')",
 				"trim-side": "url('/trim-side.png')",

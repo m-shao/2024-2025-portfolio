@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import LeafOverlay from "@/components/LeafOverlay";
+import Navigation from "@/components/Navigation";
 
 import clsx from "clsx";
 
@@ -26,6 +27,7 @@ export default function RootLayout({
 				)}
 			>
 				<LeafOverlay />
+				<Navigation />
 				{children}
 			</body>
 		</html>

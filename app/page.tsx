@@ -21,16 +21,15 @@ export default function Home() {
 							<div className='translate-y-[15%]'>
 								<Polaroids />
 							</div>
-
-							<div className='h-full flex items-end absolute'>
+							{/* <div className='h-full flex items-end absolute'>
 								<BlogStickyNote />
-							</div>
+							</div> */}
 						</div>
 					</div>
 					<div className='flex-1 flex flex-col h-full'>
 						<Name />
 						<div className='flex justify-between flex-1'>
-							<div className='flex-1 flex flex-col justify-between items-stretch pt-12'>
+							<div className='flex-1 flex flex-col justify-between items-start lg:items-stretch pt-12'>
 								<div className=''>
 									<ProjectsExperiencePaper />
 								</div>
@@ -38,7 +37,7 @@ export default function Home() {
 									<ContactMeEnvelope />
 								</div>
 							</div>
-							<div className='h-[32rem]'>
+							<div className=''>
 								<DriedFlower />
 							</div>
 						</div>
