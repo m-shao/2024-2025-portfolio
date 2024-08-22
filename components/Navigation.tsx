@@ -24,17 +24,17 @@ const Navigation = (props: Props) => {
 		outerAnimate(
 			outerScope.current,
 			{ transform: "translateY(0)" },
-			{ duration: 0.8, ease: [0.77, -0.01, 0.64, 0.99] }
+			{ duration: 0.8, ease: [0.59, 0, 0.08, 1] }
 		);
 		await stringAnimate(
 			stringScope.current,
 			{ transform: "translateY(100vh)" },
-			{ duration: 0.8, ease: [0.77, -0.01, 0.64, 0.99] }
+			{ duration: 0.8, ease: [0.59, 0, 0.08, 1] }
 		);
 		await innerAnimate(
 			innerScope.current,
 			{ opacity: 1 },
-			{ duration: 0.3, ease: [0.28, -0.35, 0.74, 1.41], delay: 0.2 }
+			{ duration: 0.2, ease: [0.28, -0.35, 0.74, 1.41], delay: 0.2 }
 		);
 		await lightAnimate(
 			lightScope.current,
