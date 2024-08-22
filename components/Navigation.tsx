@@ -117,7 +117,7 @@ const Navigation = (props: Props) => {
 								))}
 							</nav>
 							<div
-								className='h-[90vh] w-[min(95vw,65rem)] bg-yellow-radial-gradient bg-no-repeat bg-contain absolute'
+								className='h-screen w-[min(95vw,65rem)] bg-yellow-radial-gradient bg-no-repeat bg-contain absolute'
 								style={{
 									clipPath:
 										"polygon(45% 0%, 55% 0%, 100% 100%, 0% 100%)",
@@ -144,7 +144,11 @@ const Navigation = (props: Props) => {
 					Menu {"->->"}
 				</p>
 				<button onClick={handleOpen} className='w-6 md:w-8 lg:w-10'>
-					<Image src={hamburgerMenu} alt='hamburger menu' />
+					<Image
+						src={hamburgerMenu}
+						alt='hamburger menu'
+						className='shadow-lg brightness-95'
+					/>
 				</button>
 			</div>
 		</>
