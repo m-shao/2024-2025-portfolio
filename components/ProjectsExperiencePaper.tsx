@@ -8,7 +8,7 @@ type Props = {};
 
 const ProjectsExperiencePaper = (props: Props) => {
 	return (
-		<div className='relative rotate-6 w-36 lg:w-40 hover:scale-[1.02] transition-all'>
+		<button className='relative rotate-6 w-36 lg:w-40 hover:scale-[1.02] transition-all'>
 			<Image
 				src={pinkTape}
 				alt='pink tape'
@@ -33,7 +33,7 @@ const ProjectsExperiencePaper = (props: Props) => {
 				Projects & <br />
 				Experience
 			</div>
-		</div>
+		</button>
 	);
 };
 
