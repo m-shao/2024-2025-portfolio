@@ -6,7 +6,7 @@ type Props = {};
 
 const ContactMeEnvelope = (props: Props) => {
 	return (
-		<div className='flex flex-col gap-2 items-start w-full'>
+		<div className='flex flex-col gap-2 items-start w-48 lg:w-56 xl:w-64'>
 			<Image src={contactTape} alt='contact tape' className='w-4/5' />
 			<Image src={envelope} alt='envelope' className='w-full' />
 		</div>

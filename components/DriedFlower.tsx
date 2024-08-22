@@ -6,7 +6,7 @@ const DriedFlower = () => {
 		<Image
 			src={driedFlower}
 			alt='dried flower decor'
-			className='h-full translate-x-10'
+			className='h-full w-auto hidden md:block md:translate-x-6 lg:translate-x-10'
 		/>
 	);
 };

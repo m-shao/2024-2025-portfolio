@@ -25,7 +25,11 @@ const Name = (props: Props) => {
 	const handleMouseOverFirstName = (index: number) => {
 		const newRotations = randomFirstNameRotations.map((rotation, i) => {
 			if (i === index) {
-				return Math.random() * 40 - 20;
+				let newVal = rotation;
+				while (Math.abs(newVal - rotation) < 5) {
+					newVal = Math.random() * 40 - 20;
+				}
+				return newVal;
 			} else {
 				return rotation;
 			}
@@ -46,7 +50,7 @@ const Name = (props: Props) => {
 
 	return (
 		<div className='flex flex-col gap-8'>
-			<div className='flex gap-4'>
+			<div className='flex gap-2 lg:gap-4 justify-start'>
 				{firstName.map((letter, index) => (
 					<Fragment key={index}>
 						<RandsomLetter
@@ -58,7 +62,7 @@ const Name = (props: Props) => {
 					</Fragment>
 				))}
 			</div>
-			<div className='flex gap-4'>
+			<div className='flex gap-2 lg:gap-4'>
 				{lastName.map((letter, index) => (
 					<Fragment key={index}>
 						<RandsomLetter

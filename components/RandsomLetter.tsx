@@ -16,7 +16,7 @@ const RandsomLetter = ({ handleMouseOver, index, letter, rotation }: Props) => {
 			onMouseOver={() => {
 				handleMouseOver(index);
 			}}
-			className='w-8 md:w-10 lg:w-14 h-8 md:h-10 lg:h-14'
+			className='w-[12%] lg:w-14 aspect-square transition-transform'
 			src={letter.image}
 			alt={letter.letter}
 			style={{

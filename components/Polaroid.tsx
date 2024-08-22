@@ -15,7 +15,7 @@ const Polaroid = ({ polaroid, transform }: PolaroidProps) => {
 	return (
 		<div
 			className={clsx(
-				"w-1/3 px-[1%] pt-[1%] pb-[10%] bg-gray-200 shadow-md",
+				"w-2- md:w-28 lg:w-32 xl:w-40 px-[1%] pt-[1%] pb-[10%] bg-gray-200 shadow-md",
 				transform
 			)}
 		>
