@@ -13,7 +13,7 @@ export default function Home() {
 		<main className='w-screen h-screen flex justify-center items-center'>
 			<CorkBoard>
 				<div className='w-full h-full flex flex-col md:flex-row items-center md:items-start gap-0 lg:gap-12'>
-					<div className='flex flex-col gap-12 h-full w-full md:w-[24rem] xl:w-[32rem]'>
+					<div className='flex flex-col gap-[min(5vh-1rem,12rem)] h-full w-full md:w-[24rem] xl:w-[32rem]'>
 						<div className='w-4/5'>
 							<Newspaper />
 						</div>
@@ -29,7 +29,7 @@ export default function Home() {
 					<div className='flex-1 flex flex-col h-full'>
 						<Name />
 						<div className='flex justify-between flex-1'>
-							<div className='flex-1 flex flex-col justify-between items-start lg:items-stretch pt-12'>
+							<div className='flex-1 flex flex-col justify-center items-start lg:items-stretch pt-6 relative'>
 								<div className=''>
 									<ProjectsExperiencePaper />
 								</div>
