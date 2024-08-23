@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 import PolaroidType from "@/types/polaroid";
 import Image from "next/image";
@@ -12,8 +13,15 @@ type PolaroidProps = {
 };
 
 const Polaroid = ({ polaroid, transform }: PolaroidProps) => {
+	const router = useRouter();
+
+	const handleClick = () => {
+		router.push(`/photos/${polaroid.id}`);
+	};
+
 	return (
 		<button
+			onClick={handleClick}
 			className={clsx(
 				"hover:scale-[1.01] transition-all w-16 md:w-24 lg:w-[min(18vh,7rem)] xl:w-[min(18vh,9rem)] px-[1%] pt-[1%] pb-[10%] bg-gray-200 shadow-md",
 				transform

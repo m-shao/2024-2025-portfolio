@@ -135,7 +135,7 @@ const Navigation = (props: Props) => {
 				className='absolute top-0 right-8 md:right-12 lg:right-24 flex gap-2 z-40'
 				ref={stringScope}
 			>
-				<p className='bg-yellow-200 size-24 text-sm p-2'>
+				<p className='bg-yellow-200 text-black size-24 text-sm p-2'>
 					Psst! <br />
 					This is a
 					<br />
@@ -150,7 +150,7 @@ const Navigation = (props: Props) => {
 					<Image
 						src={hamburgerMenu}
 						alt='hamburger menu'
-						className='shadow-lg brightness-95'
+						className=''
 					/>
 				</button>
 			</div>

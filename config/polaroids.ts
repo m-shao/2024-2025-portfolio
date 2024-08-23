@@ -6,17 +6,20 @@ import PolaroidType from "@/types/polaroid";
 
 const polaroids: PolaroidType[] = [
 	{
+		id: 0,
 		image: Bike,
 		title: "Bike",
 		description:
 			"A Tokyo, Japan policeman's bike parked on the sidewalk whilst he's on break",
 	},
 	{
+		id: 1,
 		image: Ferris,
 		title: "Ferris Wheel",
 		description: "Kobe, Japan's Ferris Wheel at night",
 	},
 	{
+		id: 2,
 		image: Grass,
 		title: "Grass",
 		description:
