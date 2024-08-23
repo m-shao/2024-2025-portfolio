@@ -2,6 +2,7 @@
 
 import { useAnimate } from "framer-motion";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 import PolaroidType from "@/types/polaroid";
 import Image from "next/image";
@@ -37,7 +38,7 @@ const Polaroid = ({ polaroid, transform }: PolaroidProps) => {
 
 		await animate(
 			ref.current,
-			{ transform: "translateY(50vh)" },
+			{ transform: "translateY(80vh)" },
 			{ duration: 0.5, ease: "easeIn" }
 		);
 
