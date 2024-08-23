@@ -1,11 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef } from "react";
 
 import PolaroidPreview from "@/components/PolaroidPreview";
 import polaroids from "@/config/polaroids";
+
+import { motion } from "framer-motion";
 
 const Modal = ({ params }: { params: { id: string } }) => {
 	const router = useRouter();
@@ -19,14 +20,17 @@ const Modal = ({ params }: { params: { id: string } }) => {
 		e.target === dialogRef.current && router.back();
 
 	return (
-		<dialog
+		<motion.dialog
+			initial={{ translateY: "100vh", backgroundColor: "rgba(0 0 0 0)" }}
+			animate={{ translateY: 0, backgroundColor: "rgba(0 0 0 / 0.6)" }}
+			transition={{ duration: 0.5, ease: "easeInOut" }}
 			ref={dialogRef}
 			onClick={closeModal}
 			onClose={router.back}
 			className='backdrop:bg-black/60 backdrop:backdrop-blur-sm text-3xl'
 		>
 			<PolaroidPreview polaroid={polaroids[Number(params?.id)]} />
-		</dialog>
+		</motion.dialog>
 	);
 };
 
