@@ -8,7 +8,7 @@ type Props = {};
 
 const ProjectsExperiencePaper = (props: Props) => {
 	return (
-		<button className='relative rotate-6 w-36 lg:w-40 hover:scale-[1.02] transition-all'>
+		<button className='relative rotate-6 w-36 lg:w-40 hover:scale-[1.01] transition-all'>
 			<Image
 				src={pinkTape}
 				alt='pink tape'
@@ -29,7 +29,7 @@ const ProjectsExperiencePaper = (props: Props) => {
 				alt='paper trim'
 				className='translate-y-[1px]'
 			/>
-			<div className='bg-white h-48 lg:h-56 w-36 lg:w-40 p-4 lg:p-5 text-xl lg:text-2xl'>
+			<div className='bg-white h-48 lg:h-56 w-36 lg:w-40 p-4 lg:p-5 text-xl lg:text-2xl text-amber-900'>
 				Projects & <br />
 				Experience
 			</div>

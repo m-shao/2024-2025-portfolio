@@ -11,7 +11,7 @@ const BlogStickyNote = () => {
 			<a
 				target='_blank'
 				href={"https://blog.minglunshao.com"}
-				className='w-40 h-40 bg-[#fff740] space-y-4 p-3 hover:scale-[1.02] transition-all shadow-lg'
+				className='w-40 h-40 bg-[#fff740] space-y-4 p-3 hover:scale-[1.01] transition-all shadow-lg'
 			>
 				<h1 className='text-2xl'>
 					Personal <br /> Blog

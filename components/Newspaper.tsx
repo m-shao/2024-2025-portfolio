@@ -13,7 +13,7 @@ const Newspaper = (props: Props) => {
 			<Image
 				src={newspaper}
 				alt='newspaper'
-				className='hover:scale-[1.02] transition-all cursor-pointer w-full'
+				className='hover:scale-[1.01] transition-all cursor-pointer w-full'
 			/>
 		</div>
 	);

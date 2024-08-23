@@ -135,7 +135,7 @@ const Navigation = (props: Props) => {
 				className='absolute top-0 right-8 md:right-12 lg:right-24 z-50 flex gap-2'
 				ref={stringScope}
 			>
-				<p className='bg-yellow-200 size-32 p-4'>
+				<p className='bg-yellow-200 size-24 text-sm p-2'>
 					Psst! <br />
 					This is a
 					<br />
