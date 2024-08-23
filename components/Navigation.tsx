@@ -78,7 +78,7 @@ const Navigation = (props: Props) => {
 				<div className='relative'>
 					<div
 						ref={innerScope}
-						className='fixed bg-[#141414] opacity-0 w-screen h-screen'
+						className='fixed bg-[#141414] opacity-0 w-screen h-screen z-50'
 					>
 						<div
 							ref={lightScope}
@@ -132,7 +132,7 @@ const Navigation = (props: Props) => {
 				</div>
 			</div>
 			<div
-				className='absolute top-0 right-8 md:right-12 lg:right-24 z-50 flex gap-2'
+				className='absolute top-0 right-8 md:right-12 lg:right-24 flex gap-2 z-40'
 				ref={stringScope}
 			>
 				<p className='bg-yellow-200 size-24 text-sm p-2'>
@@ -143,7 +143,10 @@ const Navigation = (props: Props) => {
 					<br />
 					Menu {"->->"}
 				</p>
-				<button onClick={handleOpen} className='w-6 md:w-8 lg:w-10'>
+				<button
+					onClick={handleOpen}
+					className='w-6 md:w-8 lg:w-10 hover:scale-[1.01] -translate-y-6 hover:translate-y-0 transition-all'
+				>
 					<Image
 						src={hamburgerMenu}
 						alt='hamburger menu'
