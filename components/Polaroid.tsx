@@ -2,7 +2,6 @@
 
 import { useAnimate } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
 
 import PolaroidType from "@/types/polaroid";
 import Image from "next/image";
@@ -26,7 +25,7 @@ const Polaroid = ({ polaroid, transform }: PolaroidProps) => {
 		// );
 
 		const degrees = ["40deg", "-40deg"];
-		for (let j = 0; j < 2; j++) {
+		for (let j = 0; j < 3; j++) {
 			for (let i = 0; i < degrees.length; i++) {
 				await animate(
 					ref.current,

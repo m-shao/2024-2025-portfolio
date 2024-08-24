@@ -11,12 +11,12 @@ const LeafOverlay = (props: Props) => {
 			<Image
 				src={leaf1}
 				alt='leaf overlay leaf'
-				className='fixed top-0 left-0 w-1/6'
+				className='fixed top-0 left-0 w-1/6 drop-shadow-xl'
 			/>
 			<Image
 				src={leaf2}
 				alt='leaf overlay leaf'
-				className='fixed bottom-0 left-0 w-1/6 hidden md:block'
+				className='fixed bottom-0 left-0 w-1/6 hidden md:block drop-shadow-xl'
 			/>
 			<Image
 				src={leaf3}

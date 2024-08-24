@@ -26,7 +26,7 @@ const Modal = ({ params }: { params: { id: string } }) => {
 				backgroundColor: "rgba(0 0 0 / 0)",
 			}}
 			animate={{ translateY: 0, backgroundColor: "rgba(0 0 0 / 0.8)" }}
-			transition={{ duration: 0.5, ease: "easeInOut", delay: 0.5 }}
+			transition={{ duration: 0.5, ease: "easeInOut" }}
 			ref={dialogRef}
 			onClick={closeModal}
 			onClose={router.back}

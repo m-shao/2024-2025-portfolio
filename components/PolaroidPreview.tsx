@@ -29,7 +29,7 @@ const PolaroidPreview = ({ polaroid }: Props) => {
 			<Image src={polaroid.image} alt={polaroid.title} />
 			<div className='h-24 space-y-1'>
 				<h2 className='text-xl font-bold'>{polaroid.title}</h2>
-				<p className='text-base'>{polaroid.description}</p>
+				<p className='text-base font-sans'>{polaroid.description}</p>
 			</div>
 		</div>
 	);

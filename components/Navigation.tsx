@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import hamburgerMenu from "@/assets/hamburger-menu.svg";
@@ -17,10 +18,11 @@ const Navigation = (props: Props) => {
 	const [lightScope, lightAnimate] = useAnimate();
 	const [stringScope, stringAnimate] = useAnimate();
 
-	const [isOpen, setIsOpen] = useState(false);
+	// const [isOpen, setIsOpen] = useState(false);
+	const pathname = usePathname();
 
-	const handleOpen = async () => {
-		setIsOpen(true);
+	const handleOpen = useCallback(async () => {
+		// setIsOpen(true);
 		outerAnimate(
 			outerScope.current,
 			{ transform: "translateY(0)" },
@@ -41,10 +43,19 @@ const Navigation = (props: Props) => {
 			{ opacity: 1 },
 			{ duration: 0.3, ease: [0.51, 2.27, 0.44, -1.5], delay: 0.8 }
 		);
-	};
+	}, [
+		lightAnimate,
+		innerAnimate,
+		outerAnimate,
+		stringAnimate,
+		lightScope,
+		innerScope,
+		outerScope,
+		stringScope,
+	]);
 
-	const handleClose = async () => {
-		setIsOpen(false);
+	const handleClose = useCallback(async () => {
+		// setIsOpen(false);
 		await lightAnimate(
 			lightScope.current,
 			{ opacity: 0 },
@@ -65,7 +76,20 @@ const Navigation = (props: Props) => {
 			{ transform: "translateY(0)" },
 			{ duration: 0.8, ease: [0.77, -0.01, 0.64, 0.99] }
 		);
-	};
+	}, [
+		lightAnimate,
+		innerAnimate,
+		outerAnimate,
+		stringAnimate,
+		lightScope,
+		innerScope,
+		outerScope,
+		stringScope,
+	]);
+
+	useEffect(() => {
+		handleClose();
+	}, [pathname, handleClose]);
 
 	return (
 		<>
